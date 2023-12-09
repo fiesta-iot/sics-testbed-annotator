@@ -1,0 +1,178 @@
+{
+    "@graph": [
+        {
+            "@id": "sics:loc#ICS",
+            "@type": "geo:Point",
+            "iot-lite:altRelative": [
+                "1",
+                "2"
+            ],
+            "iot-lite:relativeLocation": "http://sws.geonames.org/6695971/",
+            "geo:alt": "57.863815",
+            "geo:lat": "51.2433445",
+            "geo:long": "-0.5932438"
+        },
+        {
+            "@id": "sics:observationName#sc-sics-sp-001-power",
+            "@type": "ssn:Observation",
+            "observationResult": "sics:sensorOutput#sc-sics-sp-001-power",
+            "observationSamplingTime": "sics:timeInterval#2017-04-05T18:14:00.001",
+            "observedBy": "sics:resource/sc-sics-sp-001-power",
+            "observedProperty": "sics:observationProperty#Power",
+            "location": "sics:loc#ICS"
+        },
+        {
+            "@id": "sics:observationName#sc-sics-sp-002-power",
+            "@type": "ssn:Observation",
+            "observationResult": "sics:sensorOutput#sc-sics-sp-002-power",
+            "observationSamplingTime": "sics:timeInterval#2017-04-05T18:14:00.001",
+            "observedBy": "sics:resource/sc-sics-sp-002-power",
+            "observedProperty": "sics:observationProperty#Power",
+            "location": "sics:loc#ICS"
+        },
+        {
+            "@id": "sics:observationName#sc-sics-sp-003-power",
+            "@type": "ssn:Observation",
+            "observationResult": "sics:sensorOutput#sc-sics-sp-003-power",
+            "observationSamplingTime": "sics:timeInterval#2017-04-05T18:14:00.001",
+            "observedBy": "sics:resource/sc-sics-sp-003-power",
+            "observedProperty": "sics:observationProperty#Power",
+            "location": "sics:loc#ICS"
+        },
+        {
+            "@id": "sics:observationProperty#Power",
+            "@type": "mthreelite:Power"
+        },
+        {
+            "@id": "sics:observationValue#sc-sics-sp-001-power",
+            "@type": "ssn:ObservationValue",
+            "hasUnit": "sics:unit#Watt",
+            "dul:hasDataValue": "20.798966"
+        },
+        {
+            "@id": "sics:observationValue#sc-sics-sp-002-power",
+            "@type": "ssn:ObservationValue",
+            "hasUnit": "sics:unit#Watt",
+            "dul:hasDataValue": "0.803082"
+        },
+        {
+            "@id": "sics:observationValue#sc-sics-sp-003-power",
+            "@type": "ssn:ObservationValue",
+            "hasUnit": "sics:unit#Watt",
+            "dul:hasDataValue": "0.891317"
+        },
+        {
+            "@id": "sics:resource/sc-sics-sp-001-power",
+            "@type": "mthreelite:EnergyMeter"
+        },
+        {
+            "@id": "sics:resource/sc-sics-sp-002-power",
+            "@type": "mthreelite:EnergyMeter"
+        },
+        {
+            "@id": "sics:resource/sc-sics-sp-003-power",
+            "@type": "mthreelite:EnergyMeter"
+        },
+        {
+            "@id": "sics:sensorOutput#sc-sics-sp-001-power",
+            "@type": "ssn:SensorOutput",
+            "hasValue": "sics:observationValue#sc-sics-sp-001-power"
+        },
+        {
+            "@id": "sics:sensorOutput#sc-sics-sp-002-power",
+            "@type": "ssn:SensorOutput",
+            "hasValue": "sics:observationValue#sc-sics-sp-002-power"
+        },
+        {
+            "@id": "sics:sensorOutput#sc-sics-sp-003-power",
+            "@type": "ssn:SensorOutput",
+            "hasValue": "sics:observationValue#sc-sics-sp-003-power"
+        },
+        {
+            "@id": "sics:timeInterval#2017-04-05T18:14:00.001",
+            "@type": "time:Instant",
+            "time:inXSDDateTime": "2017-04-05T18:14:00.001"
+        },
+        {
+            "@id": "sics:unit#Watt",
+            "@type": "mthreelite:Watt"
+        }
+    ],
+    "@context": {
+        "inXSDDateTime": {
+            "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+            "@type": "@id"
+        },
+        "observationSamplingTime": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime",
+            "@type": "@id"
+        },
+        "observedProperty": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observedProperty",
+            "@type": "@id"
+        },
+        "observationResult": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationResult",
+            "@type": "@id"
+        },
+        "observedBy": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observedBy",
+            "@type": "@id"
+        },
+        "hasValue": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasValue",
+            "@type": "@id"
+        },
+        "hasUnit": {
+            "@id": "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit",
+            "@type": "@id"
+        },
+        "hasDataValue": {
+            "@id": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "altRelative": {
+            "@id": "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "relativeLocation": {
+            "@id": "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "alt": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "long": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "lat": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "onemtom": "http://www.onem2m.org/ontology/Base_Ontology/base_ontology#",
+        "qudt": "http://data.qudt.org/qudt/owl/1.0.0/unit.owl#",
+        "iot-lite": "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#",
+        "qu": "http://purl.org/NET/ssnx/qu/qu#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "ns": "http://creativecommons.org/ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "fiesta-iot": "http://purl.org/iot/ontology/fiesta-iot#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "ssn": "http://purl.oclc.org/NET/ssnx/ssn#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "sics": "http://smart-ics.surrey.ac.uk/fiesta-iot/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "terms": "http://purl.org/dc/terms/",
+        "dul": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+        "time": "http://www.w3.org/2006/time#",
+        "mthreelite": "http://purl.org/iot/vocab/m3-lite#",
+        "vann": "http://purl.org/vocab/vann/",
+        "dc": "http://purl.org/dc/elements/1.1/"
+    }
+}  
