@@ -1,0 +1,40 @@
+{
+    "Observations": [
+        {
+            "alt": "53",
+            "dataValue": "11.250145",
+            "deployment": "unis-smart-campus",
+            "deviceId": "sc-sics-sp-001",
+            "iot-type": "sensor",
+            "lat": "51.1",
+            "lon": "-0.1",
+            "measurement": "Watts",
+            "mobile": "False",
+            "platform": "desk-ICS-02-18",
+            "qk": "power",
+            "relativeAlt": "2",
+            "resourceId": "sc-sics-sp-001-power",
+            "system": "smart-ics",
+            "timestamp": "2017-02-21T11:01:00.001",
+            "unit": "Watts"
+        },
+        {
+            "alt": "53",
+            "dataValue": "37.483008",
+            "deployment": "unis-smart-campus",
+            "deviceId": "sc-sics-sp-001",
+            "iot-type": "sensor",
+            "lat": "51.1",
+            "lon": "-0.1",
+            "measurement": "Watts",
+            "mobile": "False",
+            "platform": "desk-ICS-02-18",
+            "qk": "power",
+            "relativeAlt": "2",
+            "resourceId": "sc-sics-sp-001-power",
+            "system": "smart-ics",
+            "timestamp": "2017-02-21T11:01:00.001",
+            "unit": "Watts"
+        }
+    ]
+}
